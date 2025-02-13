@@ -41,17 +41,11 @@ body{
     grid-row-start: 1;
     grid-row-end: 3;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
- i{
-   padding: 10px;
-}
 
-.sidebar li>a{
-    text-decoration: none;
-    color: white;
-}
+
 .parentContainer{
     display: grid;
     grid-column-start: 1;
@@ -63,22 +57,11 @@ body{
     padding: 10px;
   
 }
-.otherContainer{
+/* .otherContainer{
     grid-column-start: 1;
     grid-column-end: 2;
-}
-.otherContainer li{
-    padding: 10px;
-    margin-top: 30px;
-}
+} */
 
-
-.sidebar ul{
-    list-style: none;
-    align-items: center;
-    padding: 5px;
-    font-size: 18px;
-}
 
 input[type="search"]{
     width: 50%;
@@ -113,7 +96,7 @@ input[type="search"]{
     background-color: white ;
     padding: 10px;
     gap: 8px;
-    box-shadow: 0 4px 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 0 3px rgba(0,0,0,0.1);
 }
 
 .logo{
@@ -154,7 +137,7 @@ input[type="search"]{
 }
 .card{
     background: white;
-    height: 250px;
+    height: auto;
     padding: 10px;
     display: flex;
     border-left: 5px solid #1565c0;
@@ -199,9 +182,7 @@ input[type="search"]{
   
    
 }
-.padd{
-  
-}
+
 .position p{
     position: relative;
     left: 20px;
@@ -276,8 +257,8 @@ input[type="search"]{
     text-decoration: none;
     color: white;
     background: #1565c0;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .text.one p{
@@ -289,7 +270,8 @@ input[type="search"]{
     align-items: center;
     justify-content: flex-end;
     width:50%;
-    margin-top: 10px;
+    margin-top:70px;
+    margin-left:20px;
     gap: 15px;
 }
 .icons img{
@@ -311,3 +293,50 @@ input[type="search"]{
 .content.exclude{
     border-bottom: none;;
 }
+/* .div{
+    display:flex;
+    width:100%;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: white; 
+    text-align: center;
+   
+
+} */
+
+.div{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+    color: white;
+    margin-left: 100px;
+    padding: 0;
+    
+}
+ 
+.div span>a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: flex-end;
+}
+.general .div {
+    display: flex;
+    gap: 40px;
+    padding:10px;
+    font-size: 20px;
+}
+
+
+
