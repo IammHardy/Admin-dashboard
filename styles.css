@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#D6E4F0;
+    font-family: "balsamiq sans";
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background: white;
+    border-radius: 80%;
+}
+
+.text.one{
+    color: white;
+    font-weight: bolder;
+}
+.sidebar{
+    display:grid;
+    background: #1565c0;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+ i{
+   padding: 10px;
+}
+
+.sidebar li>a{
+    text-decoration: none;
+    color: white;
+}
+.parentContainer{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    gap: 5px;
+  
+}
+.parentContainer li{
+    padding: 10px;
+  
+}
+.otherContainer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.otherContainer li{
+    padding: 10px;
+    margin-top: 30px;
+}
+
+
+.sidebar ul{
+    list-style: none;
+    align-items: center;
+    padding: 5px;
+    font-size: 18px;
+}
+
+input[type="search"]{
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+    background: #D6E4F0;
+}
+.search{
+    width: 100%;
+}
+.search ul{
+    display: grid;
+    list-style: none;
+    
+}
+.search li{
+    align-items: center;
+    text-align: center;
+    padding: 10px ;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
+    grid-row: 1/2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+ 
+    background-color: white ;
+    padding: 10px;
+    gap: 8px;
+    box-shadow: 0 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    padding: 20px;
+}
+
+.child{
+    align-items: center;
+}
+
+.second{
+   display: grid;
+   grid-template-columns: 6fr 2fr;
+   align-self: center;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   padding: 0;
+   margin: 0;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row: 2/3;
+    grid-column: 2/4;
+    padding: 20px;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, auto-fit, minmax(250px, 1fr));
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 15px;
+    padding: 20px;
+}
+.card{
+    background: white;
+    height: 250px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.text-container{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.aside{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    gap: 15px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 80px;
+    width: 100%;
+}
+/* .card.itemm{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 20px;
+   
+} */
+.position{
+    position: absolute;
+  
+   
+}
+.position p{
+    position: relative;
+    left: 20px;
+}
+
+.position.left{
+    top: 180px;
+    left: 75%;
+}
+.position.right{
+    top: 620px;
+    left: 75%;
+   
+}
+.position.right p{
+    padding-bottom: 10px;
+}
+.card.itemm.new{
+    height: 360px;
+    width: 70%;
+}
+
+.card.itemm.exempt{
+    height:340px;
+    width: 70%;
+}
+
+.profileImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black
+}
+.parentimage{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 40px;
+}
+.withIcon{
+    grid-template-columns: auto auto auto;
+    gap:5px;
+}
+
+.text{
+    color: black;
+}
+
+.nav{
+    display: grid;
+    align-items: center;
+}
+.nav ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+.nav li>a{
+    text-decoration: none;
+    color: white;
+    background: #1565c0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.text.one p{
+    font-size: 24px;
+}
+
