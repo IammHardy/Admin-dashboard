@@ -35,7 +35,7 @@ body{
 .sidebar{
     display:grid;
     background: #1565c0;
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
     grid-column-start: 1;
     grid-column-end:2;
     grid-row-start: 1;
@@ -86,6 +86,7 @@ input[type="search"]{
     border-radius: 8px;
     align-items: center;
     background: #D6E4F0;
+   border: none;
 }
 .search{
     width: 100%;
@@ -182,8 +183,8 @@ input[type="search"]{
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
-    gap: 80px;
     width: 100%;
+    gap: 20px;
 }
 /* .card.itemm{
     display: grid;
@@ -197,6 +198,9 @@ input[type="search"]{
     position: absolute;
   
    
+}
+.padd{
+  
 }
 .position p{
     position: relative;
@@ -216,13 +220,20 @@ input[type="search"]{
     padding-bottom: 10px;
 }
 .card.itemm.new{
-    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: auto;
+   grid-template-rows: 1fr 1fr 1fr;
     width: 70%;
 }
 
 .card.itemm.exempt{
-    height:340px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: auto;
+   grid-template-rows: 1fr 1fr 1fr;
     width: 70%;
+
 }
 
 .profileImage{
@@ -292,3 +303,11 @@ input[type="search"]{
  
 }
 
+.content{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+.content.exclude{
+    border-bottom: none;;
+}
