@@ -334,7 +334,7 @@ input[type="search"]{
 .general .div {
     display: flex;
     gap: 40px;
-    padding:10px;
+    padding:11px;
     font-size: 20px;
 }
 
